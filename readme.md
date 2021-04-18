@@ -1,14 +1,27 @@
-# Project Name
+# Project Name 
+## Arts and Crafts of Artesians
+### Background
+Arts and Crafts of Artesians is a storefront App for a small microecomonic projects to generate income for female artesioans living in Pakistan's rural communities. This app will launch their products to the world. 
 
-- **Author:** dfadfadfadfsfa
-- **Link to Live Site:** fdfadadfadfsdfadfadf
+### Description
+The app will showcase the work of individual artesians. Visitors/users will be abl eto land on the main page to get inspire and click on one artesian to view their collection of creations. 
+They then, will have the option to like the item, or place it their cart. Since the app will not have the functionality to 
 
+ **Author:** Humaira Zafar 
+
+**Link to Live Site:** 
+#### coming soon!! 
 
 ## Project Summary
 
 
 
 ## Technology Used
+##### HTML5
+##### CSS4
+##### Bootstarp _~~for good looks~~_
+##### JavaScript _~~so the app can functions~~__
+##### Express
 
 
 ## Models

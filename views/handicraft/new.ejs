@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- THE HEAD TAG PARTIAL -->
+    <%- include("../partials/head") %>
+
+    <body>
+        <!-- THE HEADER TAG PARTIAL -->
+        <%- include("../partials/header") %>
+        <main>
+
+         <h1>Art of Artesians</h1>
+         <main>
+            <article id="formcontainer">
+               <form id="form" action="/handicrafts" method="post">
+                <br>
+                <input type ="text" placeholder="Name" name="name"/>
+                <br>
+                <input type ="textarea" placeholder="Description" name="description"/>
+                <br>
+                <input type ="text" placeholder="place img url here" name="img"/>
+                <br>
+                <input type ="Number" placeholder=" Price " name="price"/>
+                <br>
+                <input type ="Number" placeholder="Quantity" name="qty"/>
+                <br>
+                <br>
+    
+                <input type="submit" value="create my order"/>
+                </form>
+            </article>
+            
+            </main>
+                
+                <a href="/handicrafts/<%= handicraft._id %>/edit/"><button>Edit this handicraft</button></a>
+             
+                  <form action="/handicrafts/<%= handicraft._id %>?_method=DELETE" method=post>
+                    <input type="submit" value="delete handicraft" />
+                </form>
+                <a  href="/handicrafts" class="showb"><button>Back to Handicraft!</button></a>
+    
+        <!-- THE FOOTER TAG PARTIAL -->
+        <%- include("../partials/footer") %>
+    </body>
+</html>

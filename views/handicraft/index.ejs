@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- THE HEAD TAG PARTIAL -->
+    <%- include("../partials/head") %>
+
+    <body>
+        <!-- THE HEADER TAG PARTIAL -->
+        <%- include("../partials/header") %>
+        <main>
+            <%for (handicraft of handicrafts){ %>
+                
+                    <a href="/handicrafts/<%= handicraft._id %>"><img src="<%= handicraft.img%>"/></a>
+                    <br><br>
+                    <h4 class="index"><%= handicraft.name %></h4>
+                    <br>
+                    <br>
+                    <p><%= handicraft.description %></p>
+                    <br>
+                    <br>
+                    <p>Price:<%= handicraft.price %></p>
+                    <br>
+                    <br>
+                    <p> left:<%= handicraft.left %></p>
+                    <a href="/handicrafts/<%= handicraft._id %>"><button>More about this</button></a>
+    
+                </article>
+    
+           <% } %>
+         <a href="/auth/logout"><button class="button">Logout</button></a>
+        </main>
+        <!-- THE FOOTER TAG PARTIAL -->
+        <%- include("../partials/footer") %>
+    </body>
+</html>
+<body>
+   
+    

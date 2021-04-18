@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- THE HEAD TAG PARTIAL -->
+    <%- include("../partials/head") %>
+
+    <body>
+        <!-- THE HEADER TAG PARTIAL -->
+        <%- include("../partials/header") %>
+        <main>
+
+         <h1>Log-in</h1>
+         <form action="/auth/login" method="post">
+            <input type="text" name="username" placeholder="type username">
+            <input type="password" name="password" placeholder="type password">
+            <input type="submit" value="signup">
+         </form>
+        </main>
+        <!-- THE HEAD TAG PARTIAL -->
+        <%- include("../partials/footer") %>
+    </body>
+</html>
