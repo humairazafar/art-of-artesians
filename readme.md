@@ -10,7 +10,7 @@ Consumers/visitors will have the option purchase the product, they will also rea
  **Author:** Humaira Zafar 
 
 **Link to Live Site:** 
-#### coming soon!! 
+https://artartesians.herokuapp.com/handicrafts
 
 ## Project Summary
 Art and Crafts of Artesian is a nonprofit organization set up to provide income opportunities to female artisans in the province of Sindh, and Baluchistan, Pakistan. The project was born put off the idea that rural communities are unable to send their children to school due lack of income and resources. After completing a community need assessment in 2014, a group of community development professional concluded that a second income in the household will tremendously improve the opportunities for the children to attend schools regularly. 
@@ -18,6 +18,14 @@ Art and Crafts of Artesian is a nonprofit organization set up to provide income 
 While the men in the community go out and work, women, perform the traditional household work and caring for the the children and elderly. All women in the community, however, posses the skill set to sew, embroider and create beautiful handcrafted pieces for families. These artifacts include embroidered dresses, bedding, table clothes, bags and purses, and multiple other objects. 
 
 Art of Artesian’s goal is to provide income opportunity to these female artisans and bring economic stability and prosperity to these families. The program model for this project is based on evidence based research proving how economic stability impact the education, health and well-being of a household. The group of female artisans that supply crafts to the project live in rural and coastal communities in the Sindh-Balochistan region, they carved off time to create these products after finishing their chores, most sacrifices socializations and social events to create these products to bring in a second income to their family.  
+https://artartesians.herokuapp.com/handicrafts
+
+![image](https://user-images.githubusercontent.com/75461281/115421991-19973780-a1c2-11eb-8ce6-6d1acb1659f6.png)
+
+[image](https://user-images.githubusercontent.com/75461281/115422163-41869b00-a1c2-11eb-9524-122d88d95649.png)
+![image](https://user-images.githubusercontent.com/75461281/115422233-55320180-a1c2-11eb-84c7-ad7e01543e77.png)
+![image](https://user-images.githubusercontent.com/75461281/115422352-6e3ab280-a1c2-11eb-8fbd-8ded3aa372be.png)
+
 
 
 
