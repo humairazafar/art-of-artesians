@@ -8,27 +8,52 @@
         <!-- THE HEADER TAG PARTIAL -->
         <%- include("../partials/header") %>
         <main>
-            <%for (handicraft of handicrafts){ %>
+            <%for (handicraft of handicrafts){ %>  
+                <div class="container is-4-tablet is-7-desktop is-fluid">
+                    <div class="card-image has-text-centered px-6 mt-5">
+                        <div class="card-image-has-text-centered px-6"></div>
+                        <a href="/handicrafts/<%= handicraft._id %>"><img src="<%= handicraft.img%>"/></a>
+                    </div>
+                    <div class="card-content has-text-centered">
+                        <h4 class="title is-size-5"><%= handicraft.name %></h4>
+                    </div>
+                    <div>
+                        <p class="has-text-centered is-grey"><%= handicraft.description %></p>
+                    </div>
+                    <div>
+                        <p class="text-is-centered mt-5 has-text-grey has-background-primary-light">This beautiful piece is crafted with local grown, created, or manufactured materials. It was designed by local artisans and became a prized possession after months of hard work. This piece speaks for the intricate hand-work and extreme attention to details local cartesians possess.  
+
+                        </p>
+                        <div class='has-text-centered'>
+                            <a href="/handicrafts/<%= handicraft._id %>"><button class="button is-primary mt-5 is-primary">More about this</button></a>
+                            <!-- <button class="button is-primary mt-5 is-centered">More about this Craft</button> -->
+                        </div>
+                        <!-- <div class="has-text-centered">
+                            <a href="/auth/logout"><button class="button mt-5">Logout</button></a> 
+
+                        </div> -->
+                    </div>
+                </div>         
+                 <!-- <a href="/handicrafts/<%= handicraft._id %>"><img src="<%= handicraft.img%>"/></a> -->
+                  
+                 <!-- <h4 class="index"><%= handicraft.name %></h4><h4 class="index"><%= handicraft.name %></h4>  -->
+                    
+                    <!-- <p><%= handicraft.description %></p> -->
+                    
+                    <!-- <p>Price:<%= handicraft.price %></p> -->
                 
-                    <a href="/handicrafts/<%= handicraft._id %>"><img src="<%= handicraft.img%>"/></a>
-                    <br><br>
-                    <h4 class="index"><%= handicraft.name %></h4>
-                    <br>
-                    <br>
-                    <p><%= handicraft.description %></p>
-                    <br>
-                    <br>
-                    <p>Price:<%= handicraft.price %></p>
-                    <br>
-                    <br>
-                    <p> left:<%= handicraft.left %></p>
-                    <a href="/handicrafts/<%= handicraft._id %>"><button>More about this</button></a>
+                    <!-- <p> left:<%= handicraft.left %></p> -->
+                    <!-- <a href="/handicrafts/<%= handicraft._id %>"><button>More about this</button></a> -->
     
-                </article>
+                
     
-           <% } %>
-         <a href="/auth/logout"><button class="button">Logout</button></a>
-        </main>
+           <% } %> 
+           <div class="has-text-centered">
+            <a href="/auth/logout"><button class="button mt-5">Logout</button></a> 
+
+        </div>
+         <!-- <a href="/auth/logout"><button class="button">Logout</button></a>  -->
+        <!-- </main> -->
         <!-- THE FOOTER TAG PARTIAL -->
         <%- include("../partials/footer") %>
     </body>

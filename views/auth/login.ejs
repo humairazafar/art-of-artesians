@@ -4,16 +4,37 @@
     <!-- THE HEAD TAG PARTIAL -->
     <%- include("../partials/head") %>
 
-    <body>
+    <body class="has-background-link-light">
         <!-- THE HEADER TAG PARTIAL -->
         <%- include("../partials/header") %>
         <main>
+            <h3 class="title has-text-centered mb-6">Join the movement!</h3>
+            <h4 class="title has-text-centered mb-6">log-in</h4>
+            <form action="/auth/login" method="post">
+          <div class="field mt-6 has-text-centered">
+            <label class="label">username</label> 
+            <div class="control">
+                <input type="text" name="username" placeholder="type username">
 
-         <h1>Log-in</h1>
-         <form action="/auth/login" method="post">
-            <input type="text" name="username" placeholder="type username">
-            <input type="password" name="password" placeholder="type password">
-            <input type="submit" value="signup">
+            </div>
+
+          </div>
+         <div class="field mt-6 has-text-centered">
+             <label class="label">Password</label>
+             <div class="control">
+               <input type="password" name="password" placeholder="type password"> 
+             </div>
+         </div>
+
+         
+         <!-- <form class="" action="/auth/login" method="post"> -->
+            <!-- <input type="text" name="username" placeholder="type username"> -->
+            <!-- <input type="password" name="password" placeholder="type password"> -->
+            <div class="mt-6 has-text-centered">
+                <button type="submit" class="button is-warning">LogIn</button>
+
+            </div>
+            <!-- <input type="submit" value="signup"> -->
          </form>
         </main>
         <!-- THE HEAD TAG PARTIAL -->

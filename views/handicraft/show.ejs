@@ -9,23 +9,53 @@
         <%- include("../partials/header") %>
         <main>
 
-         <h1>Art of Artesians</h1>
-         
+         <!-- products how page -->
+         <section class="section">
+             <div class="container">
+                 <div class="columns is-vcentered is-multiline">
+                     <div class="column is-6-tablet is-3-desktop">
+                         <h1 class="is-size-3-mobile is-size-1-desktop title"><%= handicraft.name %></h1>
+                         <h2 class="is size-3-mobile is-size-2-desktop subtitle"><%= handicraft.description %></h2>
+                     </div>
+                     <div class="column is-6-tablet is-5-desktop has-text-centered">
+                        <img class="showimg" src="<%=handicraft.img%>" alt="handicraft picture"/>
+                     </div>
+                     <div class="column is-12-tablet is-4-desktop">
+                         <div class="is-size-4-desktop mb-4">Price: $<%= handicraft.price %></div>
+                         <h5>Left:<%= handicraft.left %></h5>
+                         <p>This beautiful piece is crafted with local grown, created, or manufactured materials. It was designed by local artisans and became a prized possession after months of hard work. This piece speaks for the intricate hand-work and extreme attention to details local cartesians possess.  </p>
+                         <div class="has-text-centered"><a href="/handicrafts/buy/<%= handicraft._id %>"><button class="button is-link mt-5">Buy</button></a></div>
+                         
+                         <div class="has-text-centered"><a href="/handicrafts/new"><button class="button is-primary mt-5">Create Your Own Handicraft Product</button></a></div>
+
+                        <!-- <div><a href="/handicrafts/new"><button>Create Your Own Handicraft Product</button></a></div> -->
+
+                        <div class="has-text-centered"><a  href="/handicrafts" class="showb"><button class="button mt-5">Back to Handicraft!</button></a></div>
+
+
+                     </div>
+                 </div>
+
+
+
+
+             </div>
+         </section>
    
           
-                <img class="showimg" src="<%=handicraft.img%>"/>
-                <h4 class="showname"><%= handicraft.name %></h4>
-                <h5 class="showdes"><em> Description:</em><%= handicraft.description %></h6>
-                <h6 class="showp">Price:<%= handicraft.price %></h6>
-                <h6>Left:<%= handicraft.left %></h6>
-                <a href="/handicrafts/buy/<%= handicraft._id %>"><button>Buy</button></a>
-                 <a href="/handicrafts/new"><button>Create Your Own Handicraft Product</button></a>
+                <!-- <img class="showimg" src="<%=handicraft.img%>"/> -->
+                <!-- <h4 class="showname"><%= handicraft.name %></h4> -->
+                <!-- <h5 class="showdes"><em> Description:</em><%= handicraft.description %></h6> -->
+                <!-- <h6 class="showp">Price:<%= handicraft.price %></h6> -->
+                <!-- <h6>Left:<%= handicraft.left %></h6> -->
+                <!-- <a href="/handicrafts/buy/<%= handicraft._id %>"><button>Buy</button></a> -->
+                 <!-- <a href="/handicrafts/new"><button>Create Your Own Handicraft Product</button></a> -->
                 <!-- <a href="/handicrafts/<%= handicraft._id %>/edit/"><button>Edit this handicraft</button></a>
              
                   <form action="/handicrafts/<%= handicraft._id %>?_method=DELETE" method=post>
                     <input type="submit" value="delete handicraft" /> -->
-                </form>
-                <a  href="/handicrafts" class="showb"><button>Back to Handicraft!</button></a>
+                <!-- </form> -->
+                <!-- <a  href="/handicrafts" class="showb"><button>Back to Handicraft!</button></a> -->
 
         </main>
         <!-- THE FOOTER TAG PARTIAL -->

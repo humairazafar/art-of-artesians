@@ -8,12 +8,34 @@
         <!-- THE HEADER TAG PARTIAL -->
         <%- include("../partials/header") %>
         <main>
+            <main>
+                <h3 class="title has-text-centered mb-6">Join the movement!</h3>
+                <h4 class="title has-text-centered mb-6">Sign-up</h4>
+                <form action="/auth/signup" method="post">
+              <div class="field mt-6 has-text-centered">
+                <label class="label">username</label> 
+                <div class="control">
+                    <input type="text" name="username" placeholder="type username">
+    
+                </div>
+    
+              </div>
+             <div class="field mt-6 has-text-centered">
+                 <label class="label">Password</label>
+                 <div class="control">
+                   <input type="password" name="password" placeholder="type password"> 
+                 </div>
+             </div>
+             <div class="mt-6 has-text-centered">
+                <button type="submit" class="button is-warning">Sign-Up</button>
 
-         <h1>Sign-Up</h1>
+            </div>
+
+         <!-- <h1>Sign-Up</h1>
          <form action="/auth/signup" method="post">
             <input type="text" name="username" placeholder="type username">
             <input type="password" name="password" placeholder="type password">
-            <input type="submit" value="signup">
+            <input type="submit" value="signup"> -->
          </form>
         </main>
         <!-- THE HEAD TAG PARTIAL -->
